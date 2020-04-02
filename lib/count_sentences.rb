@@ -1,10 +1,10 @@
 require 'pry'
 
 class String
-
+  count = 0
   def sentence?
     if self.end_with?(".")
-      return true
+      count += 1
     else
       return false
     end
@@ -12,7 +12,7 @@ class String
 
   def question?
     if self.end_with?("?")
-      return true
+      count += 1
     else
       return false
     end
@@ -20,8 +20,10 @@ class String
 
   def exclamation?
     if self.end_with?("!")
-      return true
+      count += 1
     else
       return false
     end
   end
+  return count
+end
