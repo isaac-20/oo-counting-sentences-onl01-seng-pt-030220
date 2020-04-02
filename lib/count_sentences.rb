@@ -25,5 +25,5 @@ class String
       return false
     end
   end
-  return count
+  count
 end
