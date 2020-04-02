@@ -31,7 +31,7 @@ class String
       count +=  0
     end
   end
-  def count_sentences
+  def count_sentences()
     count
   end
 end
